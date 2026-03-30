@@ -1,135 +1,266 @@
-<!--DODATI ŠTO NEDOSTAJE!-->
+<!DOCTYPE html>
+<html lang="hr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="My awesome website about music">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style_slike.css">
+		<title>Stranica O Glazbi</title>
+	</head>
 
-<!-- Slike u galeriji -->
+	<body>
+		<header>
+			<h1>Web stranica WOW!</h1>
+		</header>
+		<nav aria-label="Main">
+			<svg id="menu-toggle" width="55" height="55">
+				<rect x="10" y="10" width="35" height="5" fill="white"/>
+				<rect x="10" y="25" width="35" height="5" fill="white"/>
+				<rect x="10" y="40" width="35" height="5" fill="white"/>
+			</svg>
+			<ul>
+				<li><a href="/index.html">Početna</a></li>
+				<li><a href="/grafikon.html">Grafikon</a></li>
+				<li><a href="/slike.html">Slike</a></li>
+			</ul>
+		</nav>
 
+		<section class="galerija">
+			<h1>Galerija slika</h1>
 
-
-
-
-<section class="galerija"> 
-	<h1>Galerija slika</h1>
-
-	<!-- putanja (href) u tagu a je drugačija kad se koristi lightbox od onoga kada želimo da se 
+			<!-- putanja (href) u tagu a je drugačija kad se koristi lightbox od onoga kada želimo da se
 					 otvori u novom tabu -->
 
+			<div class=" img-gallery-magnific">
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="1.jpg" src="https://unsplash.it/600/400?random=1" alt="Slika 1" popovertarget="img-1">
+					<figcaption>Slika 1</figcaption>
+				</figure>
+				<dialog id="img-1" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="1.jpg">
+							<img src="https://unsplash.it/600/400?random=1" alt="Slika 1">
+						</a>
+						<span class="caption">Slika 1</span>
+						<button popovertarget="img-1" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
-	<figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=1" title="1.jpg">
-		  <img src="https://unsplash.it/300/200?random=1" alt="Slika 1">
-		</a>
-		<figcaption>Slika 1</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="2.jpg">
-		  <img src="https://unsplash.it/300/200?random=2" alt="Slika 2">
-		</a>
-		<figcaption>Slika 2</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=3" title="3.jpg">
-		  <img src="https://unsplash.it/300/200?random=3" alt="Slika 3">
-		</a>
-		<figcaption>Slika 3</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=4" title="4.jpg">
-		  <img src="https://unsplash.it/300/200?random=4" alt="Slika 4">
-		</a>
-		<figcaption>Slika 4</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=5" title="5.jpg">
-		  <img src="https://unsplash.it/300/200?random=5" alt="Slika 5">
-		</a>
-		<figcaption>Slika 5</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=6" title="6.jpg">
-		  <img src="https://unsplash.it/300/200?random=6" alt="Slika 6">
-		</a>
-		<figcaption>Slika 6</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=7" title="7.jpg">
-		  <img src="https://unsplash.it/300/200?random=7" alt="Slika 7">
-		</a>
-		<figcaption>Slika 7</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=8" title="8.jpg">
-		  <img src="https://unsplash.it/300/200?random=8" alt="Slika 8">
-		</a>
-		<figcaption>Slika 8</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=9" title="9.jpg">
-		  <img src="https://unsplash.it/300/200?random=9" alt="Slika 9">
-		</a>
-		<figcaption>Slika 9</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=10" title="10.jpg">
-		  <img src="https://unsplash.it/300/200?random=10" alt="Slika 10">
-		</a>
-		<figcaption>Slika 10</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=11" title="11.jpg">
-		  <img src="https://unsplash.it/300/200?random=11" alt="Slika 11">
-		</a>
-		<figcaption>Slika 11</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=12" title="12.jpg">
-		  <img src="https://unsplash.it/300/200?random=12" alt="Slika 12">
-		</a>
-		<figcaption>Slika 12</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=13" title="13.jpg">
-		  <img src="https://unsplash.it/300/200?random=13" alt="Slika 13">
-		</a>
-		<figcaption>Slika 13</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=14" title="14.jpg">
-		  <img src="https://unsplash.it/300/200?random=14" alt="Slika 14">
-		</a>
-		<figcaption>Slika 14</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=15" title="15.jpg">
-		  <img src="https://unsplash.it/300/200?random=15" alt="Slika 15">
-		</a>
-		<figcaption>Slika 15</figcaption>
-	  </figure>
-	  
-	  <figure class="galerija_slika">
-		<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=16" title="16.jpg">
-		  <img src="https://unsplash.it/300/200?random=16" alt="Slika 16">
-		</a>
-		<figcaption>Slika 16</figcaption>
-	  </figure>
-	  
-	
-	  
-</section>
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="2.jpg" src="https://unsplash.it/600/400?random=2" alt="Slika 2" popovertarget="img-2">
+					<figcaption>Slika 2</figcaption>
+				</figure>
+				<dialog id="img-2" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="2.jpg">
+							<img src="https://unsplash.it/600/400?random=2" alt="Slika 2">
+						</a>
+						<span class="caption">Slika 2</span>
+						<button popovertarget="img-2" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="3.jpg" src="https://unsplash.it/600/400?random=3" alt="Slika 3" popovertarget="img-3">
+					<figcaption>Slika 3</figcaption>
+				</figure>
+				<dialog id="img-3" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="3.jpg">
+							<img src="https://unsplash.it/600/400?random=3" alt="Slika 3">
+						</a>
+						<span class="caption">Slika 3</span>
+						<button popovertarget="img-3" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="4.jpg" src="https://unsplash.it/600/400?random=4" alt="Slika 4" popovertarget="img-4">
+					<figcaption>Slika 4</figcaption>
+				</figure>
+				<dialog id="img-4" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="4.jpg">
+							<img src="https://unsplash.it/600/400?random=4" alt="Slika 4">
+						</a>
+						<span class="caption">Slika 4</span>
+						<button popovertarget="img-4" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="5.jpg" src="https://unsplash.it/600/400?random=5" alt="Slika 5" popovertarget="img-5">
+					<figcaption>Slika 5</figcaption>
+				</figure>
+				<dialog id="img-5" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="5.jpg">
+							<img src="https://unsplash.it/600/400?random=5" alt="Slika 5">
+						</a>
+						<span class="caption">Slika 5</span>
+						<button popovertarget="img-5" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="6.jpg" src="https://unsplash.it/600/400?random=6" alt="Slika 6" popovertarget="img-6">
+					<figcaption>Slika 6</figcaption>
+				</figure>
+				<dialog id="img-6" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="6.jpg">
+							<img src="https://unsplash.it/600/400?random=6" alt="Slika 6">
+						</a>
+						<span class="caption">Slika 6</span>
+						<button popovertarget="img-6" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
 
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="7.jpg" src="https://unsplash.it/600/400?random=7" alt="Slika 7" popovertarget="img-7">
+					<figcaption>Slika 7</figcaption>
+				</figure>
+				<dialog id="img-7" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="7.jpg">
+							<img src="https://unsplash.it/600/400?random=7" alt="Slika 7">
+						</a>
+						<span class="caption">Slika 7</span>
+						<button popovertarget="img-7" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="8.jpg" src="https://unsplash.it/600/400?random=8" alt="Slika 8" popovertarget="img-8">
+					<figcaption>Slika 8</figcaption>
+				</figure>
+				<dialog id="img-8" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="8.jpg">
+							<img src="https://unsplash.it/600/400?random=8" alt="Slika 8">
+						</a>
+						<span class="caption">Slika 8</span>
+						<button popovertarget="img-8" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="9.jpg" src="https://unsplash.it/600/400?random=9" alt="Slika 9" popovertarget="img-9">
+					<figcaption>Slika 9</figcaption>
+				</figure>
+				<dialog id="img-9" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="9.jpg">
+							<img src="https://unsplash.it/600/400?random=9" alt="Slika 9">
+						</a>
+						<span class="caption">Slika 9</span>
+						<button popovertarget="img-9" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="10.jpg" src="https://unsplash.it/600/400?random=10" alt="Slika 10" popovertarget="img-10">
+					<figcaption>Slika 10</figcaption>
+				</figure>
+				<dialog id="img-10" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="10.jpg">
+							<img src="https://unsplash.it/600/400?random=10" alt="Slika 10">
+						</a>
+						<span class="caption">Slika 10</span>
+						<button popovertarget="img-10" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="11.jpg" src="https://unsplash.it/600/400?random=11" alt="Slika 11" popovertarget="img-11">
+					<figcaption>Slika 11</figcaption>
+				</figure>
+				<dialog id="img-11" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="11.jpg">
+							<img src="https://unsplash.it/600/400?random=11" alt="Slika 11">
+						</a>
+						<span class="caption">Slika 11</span>
+						<button popovertarget="img-11" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="12.jpg" src="https://unsplash.it/600/400?random=12" alt="Slika 12" popovertarget="img-12">
+					<figcaption>Slika 12</figcaption>
+				</figure>
+				<dialog id="img-12" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="12.jpg">
+							<img src="https://unsplash.it/600/400?random=12" alt="Slika 12">
+						</a>
+						<span class="caption">Slika 12</span>
+						<button popovertarget="img-12" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="13.jpg" src="https://unsplash.it/600/400?random=13" alt="Slika 13" popovertarget="img-13">
+					<figcaption>Slika 13</figcaption>
+				</figure>
+				<dialog id="img-13" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="13.jpg">
+							<img src="https://unsplash.it/600/400?random=13" alt="Slika 13">
+						</a>
+						<span class="caption">Slika 13</span>
+						<button popovertarget="img-13" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="14.jpg" src="https://unsplash.it/600/400?random=14" alt="Slika 14" popovertarget="img-14">
+					<figcaption>Slika 14</figcaption>
+				</figure>
+				<dialog id="img-14" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="14.jpg">
+							<img src="https://unsplash.it/600/400?random=14" alt="Slika 14">
+						</a>
+						<span class="caption">Slika 14</span>
+						<button popovertarget="img-14" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="15.jpg" src="https://unsplash.it/600/400?random=15" alt="Slika 15" popovertarget="img-15">
+					<figcaption>Slika 15</figcaption>
+				</figure>
+				<dialog id="img-15" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="15.jpg">
+							<img src="https://unsplash.it/600/400?random=15" alt="Slika 15">
+						</a>
+						<span class="caption">Slika 15</span>
+						<button popovertarget="img-15" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+
+				<figure class="galerija_slika magnific-img">
+					<input class="image image-popup-vertical-fit" type="image" title="16.jpg" src="https://unsplash.it/600/400?random=16" alt="Slika 16" popovertarget="img-16">
+					<figcaption>Slika 16</figcaption>
+				</figure>
+				<dialog id="img-16" popover>
+					<div class="lightbox">
+						<a class="image-popup-vertical-fit" href="https://unsplash.it/900/?random=2" title="16.jpg">
+							<img src="https://unsplash.it/600/400?random=16" alt="Slika 16">
+						</a>
+						<span class="caption">Slika 16</span>
+						<button popovertarget="img-16" popovertargetaction="hide">Close</button>
+					</div>
+				</dialog>
+			</div>
+		</section>
+
+		<footer>
+			<p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
+		</footer>
+	</body>
+</html>
