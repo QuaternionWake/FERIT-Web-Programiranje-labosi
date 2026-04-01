@@ -49,6 +49,12 @@
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+.magnific-img button {
+	padding: 0;
+	background-color: transparent;
+	width: 100%;
+}
+
 input.image {
 	padding: 0;
 	border: none;
