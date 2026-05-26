@@ -1,3 +1,4 @@
+<?php include "auth.php" ?>
 <!DOCTYPE html>
 <html lang="hr">
 	<head>
@@ -5,26 +6,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="My awesome website about music">
 		<link rel="stylesheet" href="/styles/style.css">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 		<title>Stranica O Glazbi</title>
 	</head>
 
 	<body>
-		<header>
-			<h1>Web stranica WOW!</h1>
-		</header>
-		<nav aria-label="Main">
-			<svg id="menu-toggle" width="55" height="55">
-				<rect x="10" y="10" width="35" height="5" fill="white"/>
-				<rect x="10" y="25" width="35" height="5" fill="white"/>
-				<rect x="10" y="40" width="35" height="5" fill="white"/>
-			</svg>
-			<ul>
-				<li><a href="/index.html">Početna</a></li>
-				<li><a href="/grafikon.html">Grafikon</a></li>
-				<li><a href="/slike">Slike</a></li>
-			</ul>
-		</nav>
+		<?php include "./include/header.php" ?>
+		<?php include "./include/navbar.php" ?>
 
 		<main>
 			<section aria-label="Main">
@@ -46,6 +33,10 @@
 									<th>Genre</th>
 									<th>Year</th>
 									<th>Duration</th>
+									<?php if ($is_admin): ?>
+										<th>Edit</th>
+										<th>Delete</th>
+									<?php endif; ?>
 								</tr>
 							</thead>
 							<tbody></tbody>
@@ -71,6 +62,7 @@
 		<footer>
 			<p>&copy; 2025. Web Programiranje. Sva prava pridrzana.</p>
 		</footer>
+		<script>const is_admin = <?php echo $is_admin ? "true" : "false"; ?></script>
 		<script src="/table.js"></script>
 	</body>
 </html>

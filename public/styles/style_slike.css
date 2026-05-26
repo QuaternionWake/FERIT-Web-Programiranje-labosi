@@ -89,6 +89,19 @@ dialog {
 	margin-bottom: 5px;
 }
 
+.star {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.unrate {
+	cursor: pointer;
+}
+
+.rated {
+	color: goldenrod;
+}
+
 @media (max-width: 768px) {
 	.img-gallery-magnific {
 		flex-direction: column;

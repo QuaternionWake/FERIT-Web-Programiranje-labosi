@@ -25,6 +25,7 @@ nav {
     top: 0;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 header, nav {
@@ -54,6 +55,10 @@ nav a {
 
 nav a:hover {
     background-color: gray;
+}
+
+nav .login {
+    margin-left: auto;
 }
 
 a {
@@ -224,7 +229,7 @@ footer {
         align-items: center;
     }
 
-    nav ul {
+    nav > ul {
         display: block;
         position: absolute;
         flex-direction: column;
@@ -254,5 +259,37 @@ footer {
 
     .horizontal-vertical {
         flex-direction: column;
+    }
+}
+
+form {
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #e8e8e8;
+    border: 1px solid gray;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 30em;
+
+    & > h4 {
+        margin-top: 0;
+        width: 100%;
+        grid-area: title;
+    }
+    & label {
+        grid-area: name;
+        width: 10em;
+        text-align: end;
+    }
+    & input {
+        grid-area: input;
+        width: 20em;
+    }
+    & input[type="submit"] {
+        margin-top: 10px;
+        grid-area: submit;
     }
 }
